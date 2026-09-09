@@ -1,0 +1,18 @@
+npts 126 124 126                     # num.grid points in xyz
+gridfld NQO1_model1.maps.fld         # grid_data_file
+spacing 0.480555555556               # spacing(A)
+receptor_types A C N NA OA SA        # receptor atom types
+ligand_types A C HD N NA OA SA       # ligand atom types
+receptor NQO1_model1.pdbqt           # macromolecule
+gridcenter 0.23 2.857 -0.733         # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map NQO1_model1.A.map                # atom-specific affinity map
+map NQO1_model1.C.map                # atom-specific affinity map
+map NQO1_model1.HD.map               # atom-specific affinity map
+map NQO1_model1.N.map                # atom-specific affinity map
+map NQO1_model1.NA.map               # atom-specific affinity map
+map NQO1_model1.OA.map               # atom-specific affinity map
+map NQO1_model1.SA.map               # atom-specific affinity map
+elecmap NQO1_model1.e.map            # electrostatic potential map
+dsolvmap NQO1_model1.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

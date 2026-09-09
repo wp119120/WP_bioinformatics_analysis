@@ -1,0 +1,13 @@
+receptor = Protein gene receptor.pdbqt
+ligand=Small molecule ligands.pdbqt
+
+center_x =-5.196
+center_y = 2.277
+center_z =-2.668
+
+size_x = 40
+size_y = 40
+size_z = 40
+
+energy_range = 5
+num_modes = 30

@@ -1,0 +1,18 @@
+npts 126 126 126                     # num.grid points in xyz
+gridfld protein gene receptor.maps.fld # grid_data_file
+spacing 0.502777777778               # spacing(A)
+receptor_types A C H HD N OA SA      # receptor atom types
+ligand_types A C HD N NA OA SA       # ligand atom types
+receptor protein gene receptor.pdbqt # macromolecule
+gridcenter -7.266 3.087 -0.765       # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map protein gene receptor.A.map      # atom-specific affinity map
+map protein gene receptor.C.map      # atom-specific affinity map
+map protein gene receptor.HD.map     # atom-specific affinity map
+map protein gene receptor.N.map      # atom-specific affinity map
+map protein gene receptor.NA.map     # atom-specific affinity map
+map protein gene receptor.OA.map     # atom-specific affinity map
+map protein gene receptor.SA.map     # atom-specific affinity map
+elecmap protein gene receptor.e.map  # electrostatic potential map
+dsolvmap protein gene receptor.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

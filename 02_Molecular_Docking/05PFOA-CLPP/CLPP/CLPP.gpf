@@ -1,0 +1,18 @@
+npts 124 126 124                     # num.grid points in xyz
+gridfld CLPP.maps.fld                # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C N NA OA SA        # receptor atom types
+ligand_types A C HD N NA OA SA       # ligand atom types
+receptor CLPP.pdbqt                  # macromolecule
+gridcenter -5.105 4.021 -1.095       # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map CLPP.A.map                       # atom-specific affinity map
+map CLPP.C.map                       # atom-specific affinity map
+map CLPP.HD.map                      # atom-specific affinity map
+map CLPP.N.map                       # atom-specific affinity map
+map CLPP.NA.map                      # atom-specific affinity map
+map CLPP.OA.map                      # atom-specific affinity map
+map CLPP.SA.map                      # atom-specific affinity map
+elecmap CLPP.e.map                   # electrostatic potential map
+dsolvmap CLPP.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
